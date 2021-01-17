@@ -1,0 +1,11 @@
+[lab]
+10.0.0.50
+10.0.0.52
+
+[hardhost]
+10.0.0.10 ansible_connection=ssh ansible_user=s ansible_ssh_pass=0993676664 ansible_sudo_pass=0993676664
+
+[all:vars]
+ansible_connection=ssh
+ansible_user=vagrant
+ansible_ssh_pass=vagrant

@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+  - name: win_package install firefox
+    win_package:
+      path: https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=ru
+      product_id: 'Mozilla Firefox'
+      state: present
+      arguments: '-/S'

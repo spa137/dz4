@@ -1,0 +1,17 @@
+spa it
+
+[windows]
+запуск
+ansible-playbook имя_файла.yml
+
+пинг
+ansible  -m win_ping all
+
+[linux]
+запуск
+ansible-playbook имя_файла.yml
+
+
+пинг
+ansible all -m ping
+

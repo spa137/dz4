@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+  - name: win_package uninstall firefox
+    win_package:
+      product_id: 'Mozilla Firefox'
+      state: absent
+

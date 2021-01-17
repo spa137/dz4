@@ -1,0 +1,12 @@
+---
+- name: Add a user
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Add User
+      win_user:
+        name: spa_new
+        password: "0993676664"
+        state: present
+        groups:
+          - Администраторы

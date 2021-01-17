@@ -1,0 +1,5 @@
+# WinRM install powershell
+$ansibleconfigurl = "https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1"
+$ansibleconfig = "$env:temp\ConfigureRemotingForAnsible.ps1"
+(New-Object -TypeName System.Net.WebClient).DownloadFile($ansibleconfigurl, $ansibleconfig)
+powershell.exe -ExecutionPolicy ByPass -File $ansibleconfig Self-signed SSL certificate generated; thumbprint: 67108BA65F7835060E0C8C42E80DE549F16F2FC7

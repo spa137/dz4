@@ -1,0 +1,7 @@
+---
+- hosts: hardhost
+  roles:
+    - deb_up
+    - uphost
+
+
